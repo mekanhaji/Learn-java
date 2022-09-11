@@ -133,3 +133,139 @@ double double_number = input.nextDouble();
 // String -> .next()
 String string_input = input.nect();
 ```
+## Java Flow Control
+### if-else in java
+```java
+if (condition1) {
+  // codes
+}
+else if(condition2) {
+  // codes
+}
+else if (condition3) {
+  // codes
+}
+.
+.
+else {
+  // codes
+}
+```
+
+### Java Switch-case
+```java
+switch (expression) {
+  case value1:
+    // code <- If expression matches with value1, this code will be executed
+    break;
+  
+  case value2:
+    // code
+    break;
+  
+  ...
+  ...
+  
+  default:
+    // default statements <- If there is no match, the code of the default case is executed.
+  }
+```
+
+## Java Loops
+### Java For loop
+```java
+for (initialExpression; testExpression; updateExpression) {
+    // body of the loop
+}
+```
+### Java For-each loop
+```java
+// iterating through the array
+for(dataType item : array) {
+    ...
+}
+```
+### Java while
+```java
+while (testExpression) {
+    // body of loop
+}
+```
+### Java do...while loop
+```java
+do {
+    // body of loop
+} while(textExpression);
+```
+### Java break & continue
+```java
+// user for break from loop
+break;
+// user for skip current iteration
+continue;
+```
+
+## Java Arrays
+### Declare an array in Java
+```java
+dataType[] arrayName;
+
+// Exp...
+String[] array = new String[100];
+
+// declare an array
+double[] data;
+
+// allocate memory
+data = new double[10];
+
+//declare and initialize and array
+int[] age = {12, 4, 5, 2, 5};
+
+// declare an array
+int[] age = new int[5];
+
+// initialize array
+age[0] = 12;
+age[1] = 4;
+age[2] = 5;
+..
+
+// access array elements
+array[index]
+
+// create an array
+int[] age = {12, 4, 5};
+```
+## loop through the array
+```java
+// using for loop
+System.out.println("Using for-each Loop:");
+for(int a : age) {
+    System.out.println(a);
+}
+// Output
+/*
+Using for-each Loop:
+12
+4
+5
+*/
+```
+## Java Array's Length
+```java
+// get the total number of elements
+int arrayLength = numbers.length;
+```
+## Multidimensional Arrays
+```java
+double[][] matrix = {
+    {1.2, 4.3, 4.0}, 
+    {4.1, -1.1}
+};
+```
+## Copying arrays
+```java
+int [] numbers = {1, 2, 3, 4, 5, 6};
+    int [] positiveNumbers = numbers;    // copying arrays
+```
