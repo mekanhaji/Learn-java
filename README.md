@@ -1,5 +1,5 @@
 # Learn java
-A guide for java.
+A shot guide for java.
 
 ## Comment in Java
 ```java
