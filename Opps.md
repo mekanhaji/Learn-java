@@ -78,7 +78,6 @@ class Class_name {
 | `private` | declarations are visible within the class only |
 | `protected` | declarations are visible within the package or all subclasses |
 | `public` | declarations are visible everywhere |
-[^ back to index](#index)
 > **Default Access Modifier**
 >
 > If we do not explicitly specify any access modifier for classes, methods, variables, etc, then by default the default access modifier is considered.
@@ -125,6 +124,7 @@ public class Animal {
     }
 }
 ```
+[^ back to index](#index)
 > ## this and final
 ```java
 
