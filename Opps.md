@@ -126,8 +126,113 @@ public class Animal {
 ```
 [^ back to index](#index)
 > ## this and final
-```java
 
+> **this**
+>
+> `this` keyword is used to refer to the current object inside a method or a constructor.
+```java
+class Main {
+    int instVar;
+
+    Main(int instVar){
+        this.instVar = instVar;
+        System.out.println("this reference = " + this);
+    }
+
+    public static void main(String[] args) {
+        Main obj = new Main(8);
+        System.out.println("object reference = " + obj);
+    }
+}
+```
+**Output**
+```bash
+this reference = Main@23fc625e
+object reference = Main@23fc625e
+```
+> **final**
+>
+> In Java, the final keyword is used to denote constants. It can be used with variables, methods, and classes.
+> - the final variable cannot be reinitialized with another value
+> - the final method cannot be overridden
+> - the final class cannot be extended
+```java
+class Main {
+  public static void main(String[] args) {
+
+    // create a final variable
+    final int AGE = 32;
+
+    // try to change the final variable
+    AGE = 45;
+    System.out.println("Age: " + AGE);
+  }
+}
+```
+**Output**
+```bash
+cannot assign a value to final variable AGE
+    AGE = 45;
+    ^
+```
+> **final Method**
+> 
+> In Java, the final method cannot be overridden by the child class.
+```java
+class FinalDemo {
+    // create a final method
+    public final void display() {
+      System.out.println("This is a final method.");
+    }
+}
+
+class Main extends FinalDemo {
+  // try to override final method
+  public final void display() {
+    System.out.println("The final method is overridden.");
+  }
+
+  public static void main(String[] args) {
+    Main obj = new Main();
+    obj.display();
+  }
+}
+```
+**Output**
+```bash
+ display() in Main cannot override display() in FinalDemo
+  public final void display() {
+                    ^
+  overridden method is final
+```
+> **final Class**
+>
+> the final class cannot be inherited by another class
+```java
+// create a final class
+final class FinalClass {
+  public void display() {
+    System.out.println("This is a final method.");
+  }
+}
+
+// try to extend the final class
+class Main extends FinalClass {
+  public  void display() {
+    System.out.println("The final method is overridden.");
+  }
+
+  public static void main(String[] args) {
+    Main obj = new Main();
+    obj.display();
+  }
+}
+```
+**Output**
+```bash
+cannot inherit from final FinalClass
+class Main extends FinalClass {
+                   ^
 ```
 [^ back to index](#index)
 > ## Inheritance
