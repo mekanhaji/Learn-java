@@ -1,5 +1,5 @@
 # Learn java
-A shot guide for java.
+A guide for java.
 
 ## Comment in Java
 ```java
@@ -237,7 +237,7 @@ array[index]
 // create an array
 int[] age = {12, 4, 5};
 ```
-### loop through the array
+## loop through the array
 ```java
 // using for loop
 System.out.println("Using for-each Loop:");
@@ -252,19 +252,19 @@ Using for-each Loop:
 5
 */
 ```
-### Java Array's Length
+## Java Array's Length
 ```java
 // get the total number of elements
 int arrayLength = numbers.length;
 ```
-### Multidimensional Arrays
+## Multidimensional Arrays
 ```java
 double[][] matrix = {
     {1.2, 4.3, 4.0}, 
     {4.1, -1.1}
 };
 ```
-### Copying arrays
+## Copying arrays
 ```java
 int [] numbers = {1, 2, 3, 4, 5, 6};
     int [] positiveNumbers = numbers;    // copying arrays
