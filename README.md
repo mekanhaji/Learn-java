@@ -10,7 +10,8 @@
  - [x] Arrays
  - [ ] String
 ## 2. OOP's
- - [ ] Class and Objects
+ - [x] Class and Objects
+ - [ ] Methods
  - [ ] Constructor
  - [ ] Access Modifiers
  - [ ] this and final
