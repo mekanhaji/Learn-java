@@ -1,5 +1,13 @@
-# Learn java
-A guide for java.
+# Indro
+## Index
+ - [Comment in Java](#comment-in-java)
+ - [Variables in Java](#create-variables-in-java)
+ - [Data Types](#java-data-types)
+ - [Operators](#java-operators)
+ - [Input and Output](#java-input-and-output)
+ - [Flow Control](#java-flow-control)
+ - [Loops](#java-loops)
+ - [Arrays](#java-arrays)
 
 ## Comment in Java
 ```java
@@ -8,6 +16,7 @@ A guide for java.
 multi line
 comment */
 ```
+[^ back to index](#index)
 ## Create Variables in Java
 ```c
 DataType VariableName = Value;
@@ -25,6 +34,7 @@ char letter = 'a';
 // String
 String str = "Java Programming";
 ```
+[^ back to index](#index)
 
 ## Java Data Types
 #### Primitive
@@ -43,7 +53,7 @@ String str = "Java Programming";
 | Data Type | Size | Range | Default value |
 |:---:|:----:|:----:|:---:|
 | `String` | 16 bite * no of `char` | . | `'\u0000'`|
-
+[^ back to index](#index)
 ## Java Operators
 ### Arithmetic Operators
 | Operator | Operation |
@@ -102,7 +112,7 @@ String str = "Java Programming";
 ```c
 variable = Expression ? expression1 : expression2
 ```
-
+[^ back to index](#index)
 ## Java Input and Output
 ### Output
 ```java
@@ -133,6 +143,7 @@ double double_number = input.nextDouble();
 // String -> .next()
 String string_input = input.nect();
 ```
+[^ back to index](#index)
 ## Java Flow Control
 ### if-else in java
 ```java
@@ -204,7 +215,7 @@ break;
 // user for skip current iteration
 continue;
 ```
-
+[^ back to index](#index)
 ## Java Arrays
 ### Declare an array in Java
 ```java
@@ -269,3 +280,4 @@ double[][] matrix = {
 int [] numbers = {1, 2, 3, 4, 5, 6};
     int [] positiveNumbers = numbers;    // copying arrays
 ```
+[^ back to index](#index)
