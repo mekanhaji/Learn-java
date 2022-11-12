@@ -237,11 +237,107 @@ class Main extends FinalClass {
 [^ back to index](#index)
 > ## Inheritance
 ```java
+// The extends keyword is used to perform inheritance in Java.
+class Animal {
+  // methods and fields
+}
 
+// use of extends keyword
+// to perform inheritance
+class Dog extends Animal {
+
+  // methods and fields of Animal
+  // methods and fields of Dog
+}
+```
+| Example
+```Java
+class Animal {
+
+  // field and method of the parent class
+  String name;
+  public void eat() {
+    System.out.println("I can eat");
+  }
+}
+
+// inherit from Animal
+class Dog extends Animal {
+
+  // new method in subclass
+  public void display() {
+    System.out.println("My name is " + name);
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+
+    // create an object of the subclass
+    Dog labrador = new Dog();
+
+    // access field of superclass
+    labrador.name = "Rohu";
+    labrador.display();
+
+    // call method of superclass
+    // using object of subclass
+    labrador.eat();
+
+  }
+}
+```
+**Output**
+```bash
+My name is Rohu
+I can eat
 ```
 [^ back to index](#index)
 > ## super
+
+> The `super` keyword in Java is used in subclasses to access superclass members (attributes, constructors and methods).
+
 ```java
+class Animal {
+  // Parent Constructor
+  Animal(String name) {
+    // body...
+  }
+  // overridden method
+  public void display(){
+    System.out.println("I am an animal");
+  }
+}
+
+class Dog extends Animal {
+  // Child Constructor
+  Dog(String name) {
+    // this will call Parent Constructor
+    super(name);
+  }
+
+  // overriding method
+  @Override
+  public void display(){
+    System.out.println("I am a dog");
+  }
+
+  public void printMessage(){
+
+    // this calls overriding method
+    display(); // "I am a dog"
+
+    // this calls overridden method
+    super.display(); // "I am an animal"
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Dog dog1 = new Dog();
+    dog1.printMessage();
+  }
+}
 
 ```
 [^ back to index](#index)
