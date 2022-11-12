@@ -69,12 +69,9 @@ class Class_name {
 ```
 [^ back to index](#index)
 > ## Access Modifires
-```java
-// Access Modifiers
-/*
- * access modifiers are used to set the accessibility (visibility) of classes, interfaces, variables, methods, constructors, data members, and the setter methods.
- */
-```
+
+> **Access Modifiers** are used to set the accessibility (visibility) of classes, interfaces, variables, methods, constructors, data members, and the setter methods.
+
 | Modifier | Description |
 |:--:|--|
 | `default` | declarations are visible only within the package (package private) |
@@ -82,6 +79,52 @@ class Class_name {
 | `protected` | declarations are visible within the package or all subclasses |
 | `public` | declarations are visible everywhere |
 [^ back to index](#index)
+> **Default Access Modifier**
+>
+> If we do not explicitly specify any access modifier for classes, methods, variables, etc, then by default the default access modifier is considered.
+```java
+package defaultPackage;
+class Logger {
+    void message(){
+        System.out.println("This is a message");
+    }
+}
+```
+> **Private Access Modifier**
+>
+> When variables and methods are declared private, they cannot be accessed outside of the class.
+```java
+class Data {
+    // private variable
+    private String name;
+}
+```
+> **Protected Access Modifier**
+>
+> When methods and data members are declared `protected`, we can access them within the same package as well as from subclasses
+```java
+class Animal {
+    // protected method
+    protected void display() {
+        System.out.println("I am an animal");
+    }
+}
+```
+> **Public Access Modifier**
+>
+> When methods, variables, classes, and so on are declared public, then we can access them from anywhere. The public access modifier has no scope restriction.
+```java
+public class Animal {
+    // public variable
+    public int legCount;
+
+    // public method
+    public void display() {
+        System.out.println("I am an animal.");
+        System.out.println("I have " + legCount + " legs.");
+    }
+}
+```
 > ## this and final
 ```java
 
