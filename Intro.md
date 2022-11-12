@@ -1,4 +1,4 @@
-# Indro
+# Intro
 ## Index
  - [Comment in Java](#comment-in-java)
  - [Variables in Java](#create-variables-in-java)

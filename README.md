@@ -1,5 +1,5 @@
 # JAVA
-## 1. Indro
+## 1. Intro
  - [x] Comment in Java
  - [x] Variables in Java
  - [x] Data Types
@@ -8,6 +8,25 @@
  - [x] Flow Control
  - [x] Loops
  - [x] Arrays
-
+ - [ ] String
 ## 2. OOP's
+ - [ ] Class and Objects
+ - [ ] Constructor
+ - [ ] Access Modifiers
+ - [ ] this and final
+ - [ ] Inheritance
+ - [ ] super
+ - [ ] Abstract Class and Method
+ - [ ] Interface
+ - [ ] Polymorphism
+ - [ ] Encapsulation
 ## 3. Exception Handling
+ - [ ] intro
+ - [ ] try...catch
+ - [ ] throw and throws
+ - [ ] catch Multiple Exceptions
+ - [ ] try-with-resources
+ - [ ] Annotations
+ - [ ] Annotations Types
+ - [ ] Logging
+ - [ ] Assertions
