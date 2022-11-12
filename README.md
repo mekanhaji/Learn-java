@@ -1,5 +1,10 @@
 # JAVA
-
 ### 1. Indro
- - [ ] Comment in Java
- 
+ - [x] Comment in Java
+ - [x] Variables in Java
+ - [x] Data Types
+ - [x] Operators
+ - [x] Input and Output
+ - [x] Flow Control
+ - [x] Loops
+ - [x] Arrays
