@@ -1,5 +1,5 @@
 # JAVA
-## 1. Intro
+## 1. [Intro](Java-I/Intro.md)
  - [x] Comment in Java
  - [x] Variables in Java
  - [x] Data Types
